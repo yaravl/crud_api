@@ -1,6 +1,7 @@
-import path from 'path';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
 
-export default {
+module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
   entry: './src/index.ts',
