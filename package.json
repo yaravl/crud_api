@@ -9,6 +9,7 @@
     "start": "ts-node src/index.ts",
     "build": "webpack && node dist/index.js",
     "start:prod": "tsc -w",
+    "start:multi": "tsc && node dist/multi.js",
     "test": "jest --coverage"
   },
   "author": "",
