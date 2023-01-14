@@ -5,7 +5,7 @@ import { getUsers, getUser, createUser, putUser, deleteUser } from './controller
 import { CODES, MESSAGES } from './constants';
 
 const PORT = process.env.PORT || 3000;
-const server = http.createServer((req, res) => {
+export const server = http.createServer((req, res) => {
   const url = req.url ? req.url.replace(/\/*$/g, '') : undefined;
   const isUser = url?.match(/\/api\/users\/([A-Za-z0-9])/);
 
